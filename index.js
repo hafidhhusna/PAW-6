@@ -36,7 +36,7 @@ mongoose.connect(process.env.MONGO_URI)
 app.get("/", (req, res) => {
   res.send("API is working!");
 });
-app.use("/data", require("./src/routes/route"));
+app.use("/data", require("./src/routes/Productroutes"));
 
 // APP START
 app.listen(5000, () => {
